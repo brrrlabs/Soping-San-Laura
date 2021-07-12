@@ -1,0 +1,185 @@
+/* body, html {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Book Antiqua', 'Palatino', serif;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+}
+
+.fs {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.bg-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+video::-webkit-media-controls-container,
+.media-controls-container {
+  display: none !important;
+  opacity: 0;
+}
+
+header .navi {
+  display: none;
+}
+
+header.menu .navi {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh 0;
+}
+
+header.menu .title {
+  display: none;
+}
+
+header.menu .navi-main {
+  font-size: 1.8rem;
+}
+
+header.menu .navi-main a {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 3.5vw;
+  margin-bottom: 3px;
+  color: #fff;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.fx-flip {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+a.fx-flip h1 {
+  line-height: 1;
+  transition: all .3s;
+  transform: scale(1, -1);
+  margin-top: -0.25em;
+}
+
+a.fx-flip:hover h1 {
+  transform: scale(1, 1);
+  margin-top: 0;
+}
+
+.back-link a {
+  color: #4ca340;
+  text-decoration: none;
+  border-bottom: 1px #4ca340 solid;
+}
+
+.back-link a:hover,
+.back-link a:focus {
+  color: #408536;
+  text-decoration: none;
+  border-bottom: 1px #408536 solid;
+}
+
+.btn-press {
+  text-decoration: underline;
+}
+
+@media (orientation: portrait) {
+  a.fx-flip {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+}
+
+#info-layer {
+  display: none;
+  background-color: rgba(0, 0, 0, .3);
+  transition: all 0.5s;
+  z-index: 100;
+  font-size: 14px;
+  line-height: 1.3em;
+  overflow-y: scroll;
+}
+
+#info-layer h1 {
+  margin: 0 auto;
+  ;
+  font-size: 1.8em;
+}
+
+#info-layer h3 {
+  font-size: 1em;
+  margin: 0 auto;
+  ;
+}
+
+#info-layer .container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3em 1em;
+}
+
+#info-layer p {
+  margin: 0 0 1em 0;
+}
+
+#info-layer header {
+  height: 4.2em;
+}
+
+#info-layer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#info-layer .zone {
+  margin: 1em 0;
+}
+
+body.info #info-layer {
+  display: block;
+  background-color: rgba(0, 0, 0, .9);
+}
+
+body.info #start-layer {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  #info-layer .container {
+    padding-top: 5em;
+  }
+} */
+
+.dummy {
+  height: 100vh;
+  width: 100vw;
+  background-image:  url("/assets/img/dummy.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

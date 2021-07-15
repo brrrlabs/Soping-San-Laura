@@ -6,6 +6,41 @@ body {
   height: 100vh;
   padding-bottom: 11750;
 }
+.overlay-object {
+  display: inline-block;
+  height:auto;
+  width: auto;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+svg:hover {
+  cursor: pointer;
+}
+
+.modal {
+  padding-right: 0px !important;
+}
+
+.act-name {
+  align-items: center;
+  text-align: center;
+  color: #B1FD36;
+  font-family: 'Marcellus', serif;
+  font-style: normal;
+  font-weight: normal;
+  z-index: 100;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.act-name div h2 {
+  align-items: center;
+  text-align: center;
+}
 
 .info-paragraph{
   color: #fff;
@@ -45,6 +80,12 @@ body {
   position: fixed;
 }
 
+.artist-text {
+  color: #B1FD36;
+  font-family: 'Marcellus', serif;
+  top: 5vh !important;
+}
+
 .frontpage {
   height: 100vh;
   width: 100vw;
@@ -70,6 +111,15 @@ body {
 
 .frontpage .title:hover {
   text-decoration: line-through;
+}
+
+.sub-title {
+  align-items: center;
+  text-align: center;
+  color: #B1FD36;
+  font-family: 'Marcellus', serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* MODAL */

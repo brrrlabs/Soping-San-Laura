@@ -241,3 +241,7 @@ body {
 #slide-13 {
   z-index: 1;
 }
+
+#slide-14 {
+  z-index: 0;
+}

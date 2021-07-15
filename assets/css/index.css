@@ -6,6 +6,11 @@ body {
   height: 100vh;
   padding-bottom: 11750;
 }
+
+video {
+    object-fit: fill;
+}
+
 .overlay-object {
   display: inline-block;
   height:auto;

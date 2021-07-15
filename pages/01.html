@@ -92,9 +92,9 @@
     </div>
 
     <div class="row act-name align-items-center">
-      <svg data-toggle="modal" data-target="#riri-video" id="door-to-door-line" style="position: relative;top:50%;left:50%;transform: translate(-50%, -50%);" width="1214" height="1057" viewBox="0 0 1214 1057" fill="none"
+      <svg  id="door-to-door-line" style="position: relative;top:50%;left:50%;transform: translate(-50%, -50%);" width="1214" height="1057" viewBox="0 0 1214 1057" fill="none"
         xmlns="http://www.w3.org/2000/svg">
-        <path id="door-to-door-path"
+        <path id="door-to-door-path" data-toggle="modal" data-target="#riri-video"
           d="M20.0004 210.5V78L123 55.5H293C355.833 51.1667 484.1 42.5 494.5 42.5C507.5 42.5 649.5 40.5 668.5 42.5C683.7 44.1 755.833 35.5 790 31L1003 5H1096L1137.5 16.5L1206.5 31V78V173C1204.67 217.333 1202.1 307.5 1206.5 313.5C1212 321 1206.5 431 1206.5 444V577V707.5L1174.5 754L1126 788L1085 825V862.5C1019 888 882.5 940.5 864.5 946.5C846.5 952.5 774.667 964 741 969L545 1017.5L401 1051.5L281.5 1036.5L186.5 1051.5H96.5L65 1036.5L29.5 1001L20.0004 926L29.5 803C26.3335 762.5 20.0004 678.9 20.0004 668.5V526.5C20.0004 517.5 7.00043 335.5 7.00043 313.5C7.00043 291.5 3.00043 268.5 7.00043 255.5C10.2004 245.1 17.0004 221.167 20.0004 210.5Z"
           fill="#9EFF0000" stroke="#9EFF00" stroke-width="9" />
       </svg>
@@ -159,8 +159,10 @@
                 </button>
               </div>
               <div class="modal-body">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/adKEqin5SoI?controls=0" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <video width="100%" height="1080" controls>
+                    <source src="/assets/video/astronaut.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>

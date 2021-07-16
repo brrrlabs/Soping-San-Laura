@@ -24,40 +24,40 @@
     <div class="row dummy">
       <div class="col-md-12" id="viewport">
         <div class="box" id="slide-0">
-          <img loading="lazy" id="1st_image" src="/assets/img/ordered/01_a.png" />
+          <img id="1st_image" src="/assets/img/ordered/01_a.png" />
         </div>
         <div class="box" id="slide-1">
-          <img loading="lazy" id="2nd_image" src="/assets/img/ordered/02_a.png" />
+          <img id="2nd_image" src="/assets/img/ordered/02_a.png" />
         </div>
         <div class="box" id="slide-2">
-          <img loading="lazy" src="/assets/img/ordered/03_a.png" />
+          <img src="/assets/img/ordered/03_a.png" />
         </div>
         <div class="box" id="slide-3">
-          <img loading="lazy" src="/assets/img/ordered/04_a.png" />
+          <img src="/assets/img/ordered/04_a.png" />
         </div>
         <div class="box" id="slide-4">
-          <img loading="lazy" src="/assets/img/ordered/05_a.png" />
+          <img src="/assets/img/ordered/05_a.png" />
         </div>
         <div class="box" id="slide-5">
-          <img loading="lazy" src="/assets/img/ordered/06_b.png" />
+          <img src="/assets/img/ordered/06_b.png" />
         </div>
         <div class="box" id="slide-6">
-          <img loading="lazy" src="/assets/img/ordered/07_a.png" />
+          <img src="/assets/img/ordered/07_a.png" />
         </div>
         <div class="box" id="slide-7">
-          <img loading="lazy" src="/assets/img/ordered/08_.png" />
+          <img src="/assets/img/ordered/08_.png" />
         </div>
         <div class="box" id="slide-8">
-          <img loading="lazy" src="/assets/img/source.gif" />
+          <img src="/assets/img/source.gif" />
         </div>
         <div class="box" id="slide-9">
-          <img loading="lazy" src="/assets/img/ordered/09_a.png" />
+          <img src="/assets/img/ordered/09_a.png" />
         </div>
         <div class="box" id="slide-10">
-          <img loading="lazy" src="/assets/img/ordered/10_.jpg" />
+          <img src="/assets/img/ordered/10_.jpg" />
         </div>
         <!-- <div class="box" id="slide-11">
-          <img loading="lazy" src="/assets/img/ordered/10_.png" />
+          <img src="/assets/img/ordered/10_.png" />
         </div> -->
       </div>
     </div>
@@ -475,9 +475,7 @@
     }
 
     document.addEventListener("DOMContentLoaded", function() {
-      if (document.getElementById("1st_image").complete == true && document.getElementById("2nd_image").complete == true  ) {
-        $('.loader-div').hide(2000);
-      }
+
       window.addEventListener("scroll", moveCamera);
       window.addEventListener('resize', moveCamera);
       moveCamera();

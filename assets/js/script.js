@@ -41,7 +41,7 @@ $('#mursida-path').click(function() {
 
 const handleSubmit = (e) => {
   e.preventDefault()
-  let myForm = document.getElementById('pizzaOrder');
+  let myForm = document.getElementById('question-form');
   let formData = new FormData(myForm)
   fetch('/', {
     method: 'POST',

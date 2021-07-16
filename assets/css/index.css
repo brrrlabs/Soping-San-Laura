@@ -36,13 +36,44 @@ svg:hover {
   font-family: 'Marcellus', serif;
   font-style: normal;
   font-weight: normal;
-  z-index: 100;
   position: fixed;
   width: 100vw;
   height: 100vh;
+  z-index: -1;
 }
 
 .act-name div h2 {
+  align-items: center;
+  text-align: center;
+}
+
+.act-sec-1 {
+  align-items: center;
+  text-align: center;
+  color: #B1FD36;
+  font-family: 'Marcellus', serif;
+  font-style: normal;
+  font-weight: normal;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.act-sec-2 {
+  align-items: center;
+  text-align: center;
+  color: #B1FD36;
+  font-family: 'Marcellus', serif;
+  font-style: normal;
+  font-weight: normal;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.act-sec-1 div h2 {
   align-items: center;
   text-align: center;
 }
@@ -62,6 +93,13 @@ svg:hover {
   background-size: cover;
   background-position: center;
 }
+
+/* .rhizoma-row {
+  background-image: url("/assets/img/ordered/09_a.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
 
 .menu-text-info:hover {
   text-decoration: line-through;

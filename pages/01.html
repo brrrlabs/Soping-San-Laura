@@ -14,20 +14,20 @@
 
 <body>
   <div class="loader-div">
-  <span class="loader">
-    <span></span>
-    <span></span>
-  </span>
-</div>
+    <span class="loader">
+      <span></span>
+      <span></span>
+    </span>
+  </div>
 
   <div class="container-fluid">
     <div class="row dummy">
       <div class="col-md-12" id="viewport">
         <div class="box" id="slide-0">
-          <img loading="lazy" src="/assets/img/ordered/01_a.png" />
+          <img loading="lazy" id="1st_image" src="/assets/img/ordered/01_a.png" />
         </div>
         <div class="box" id="slide-1">
-          <img loading="lazy" src="/assets/img/ordered/02_a.png" />
+          <img loading="lazy" id="2nd_image" src="/assets/img/ordered/02_a.png" />
         </div>
         <div class="box" id="slide-2">
           <img loading="lazy" src="/assets/img/ordered/03_a.png" />
@@ -44,6 +44,21 @@
         <div class="box" id="slide-6">
           <img loading="lazy" src="/assets/img/ordered/07_a.png" />
         </div>
+        <div class="box" id="slide-7">
+          <img loading="lazy" src="/assets/img/ordered/08_.png" />
+        </div>
+        <div class="box" id="slide-8">
+          <img loading="lazy" src="/assets/img/source.gif" />
+        </div>
+        <div class="box" id="slide-9">
+          <img loading="lazy" src="/assets/img/ordered/09_a.png" />
+        </div>
+        <div class="box" id="slide-10">
+          <img loading="lazy" src="/assets/img/ordered/10_.jpg" />
+        </div>
+        <!-- <div class="box" id="slide-11">
+          <img loading="lazy" src="/assets/img/ordered/10_.png" />
+        </div> -->
       </div>
     </div>
 
@@ -99,16 +114,109 @@
     </div>
 
     <div class="row act-name align-items-center">
-      <svg  id="door-to-door-line" style="position: relative;top:50%;left:50%;transform: translate(-50%, -50%);" width="1214" height="1057" viewBox="0 0 1214 1057" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path id="door-to-door-path" data-toggle="modal" data-target="#riri-video"
-          d="M20.0004 210.5V78L123 55.5H293C355.833 51.1667 484.1 42.5 494.5 42.5C507.5 42.5 649.5 40.5 668.5 42.5C683.7 44.1 755.833 35.5 790 31L1003 5H1096L1137.5 16.5L1206.5 31V78V173C1204.67 217.333 1202.1 307.5 1206.5 313.5C1212 321 1206.5 431 1206.5 444V577V707.5L1174.5 754L1126 788L1085 825V862.5C1019 888 882.5 940.5 864.5 946.5C846.5 952.5 774.667 964 741 969L545 1017.5L401 1051.5L281.5 1036.5L186.5 1051.5H96.5L65 1036.5L29.5 1001L20.0004 926L29.5 803C26.3335 762.5 20.0004 678.9 20.0004 668.5V526.5C20.0004 517.5 7.00043 335.5 7.00043 313.5C7.00043 291.5 3.00043 268.5 7.00043 255.5C10.2004 245.1 17.0004 221.167 20.0004 210.5Z"
-          fill="#9EFF0000" stroke="#9EFF00" stroke-width="9" />
-      </svg>
+      <div class="col-md-12 col-sm-12 align-items-center">
+        <svg id="door-to-door-line" style="position: absolute;top:50%;left:50%;transform: translate(-50%, -50%);max-height:100vh;max-width:100vw;" width="1214" height="1057" viewBox="0 0 1214 1057" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="door-to-door-path" data-toggle="modal" data-target="#riri-video"
+            d="M20.0004 210.5V78L123 55.5H293C355.833 51.1667 484.1 42.5 494.5 42.5C507.5 42.5 649.5 40.5 668.5 42.5C683.7 44.1 755.833 35.5 790 31L1003 5H1096L1137.5 16.5L1206.5 31V78V173C1204.67 217.333 1202.1 307.5 1206.5 313.5C1212 321 1206.5 431 1206.5 444V577V707.5L1174.5 754L1126 788L1085 825V862.5C1019 888 882.5 940.5 864.5 946.5C846.5 952.5 774.667 964 741 969L545 1017.5L401 1051.5L281.5 1036.5L186.5 1051.5H96.5L65 1036.5L29.5 1001L20.0004 926L29.5 803C26.3335 762.5 20.0004 678.9 20.0004 668.5V526.5C20.0004 517.5 7.00043 335.5 7.00043 313.5C7.00043 291.5 3.00043 268.5 7.00043 255.5C10.2004 245.1 17.0004 221.167 20.0004 210.5Z"
+            fill="#9EFF0000" stroke="#9EFF00" stroke-width="9" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="row act-name align-items-center">
+      <div class="col-md-12 col-sm-12 align-items-center">
+        <div class="align-items-center title-wrapper">
+          <h4 class="artist-text">Mimzy and Rizkya Duavania</h4>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 align-items-center">
+        <div class="align-items-center title-wrapper">
+          <h1 class="display-1">
+            Soping
+            Mursida
+          </h1>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 align-items-center">
+        <a class="d-flex justify-content-center title-wrapper" data-toggle="modal" data-target="#soping-mursida-modal" style="text-decoration: none;">
+          <h4 class="text-center menu-text">info</h4>
+        </a>
+      </div>
+    </div>
+
+    <div class="row act-name align-items-center">
       <div class="col-md-12 col-sm-12 align-items-center">
         <h2 class="display-1"></h2>
       </div>
     </div>
+
+    <div class="row act-name align-items-center">
+      <div class="row align-items-center act-sec-1">
+        <div class="col-md-12 col-sm-12 align-items-center">
+          <div class="align-items-center title-wrapper">
+            <h4 class="artist-text">Mimzy</h4>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 align-items-center">
+          <div class="align-items-center title-wrapper">
+            <h1 class="display-1">
+              Mentelaceae
+              Rhizoma
+            </h1>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 align-items-center">
+          <a class="d-flex justify-content-center title-wrapper" data-toggle="modal" data-target="#rhizoma-modal" style="text-decoration: none;">
+            <h4 class="text-center menu-text">info</h4>
+          </a>
+        </div>
+      </div>
+
+      <div class="row align-items-center act-sec-2">
+        <div class="col-md-12 col-sm-12 align-items-center">
+          <svg  style="position: absolute;top:50%;left:50%;transform: translate(-50%, -50%);max-height:80vh;max-width:100vw;" width="951" height="825" viewBox="0 0 951 825" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path data-toggle="modal" data-target="#rhizoma-video" id="rhizoma-path" d="M3 300L17 16L43 10C86.6667 10.3333 176 10.8 184 10C194 9 276 2 285 2H431H803H859C862.333 10.6667 867 30 859 38C851 46 882.333 105.333 899 134C915.667 189.333 949 303.2 949 316V488C949 499.2 907.667 576.667 887 614L869 712L847 776H787V822C719 810.667 574.2 785.6 539 776C503.8 766.4 417.667 772 379 776C323 770 196.2 756 137 748C63 738 73 740 53 748C37 754.4 29 734.667 27 724V650L3 300Z" stroke="#BFFF00" stroke-width="4"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="row act-name align-items-center">
+      <div class="row align-items-center act-sec-1">
+        <div class="col-md-12 col-sm-12 align-items-center">
+          <div class="align-items-center title-wrapper">
+            <h4 class="artist-text">Mimzy and Rizkya Duavania</h4>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 align-items-center">
+          <div class="align-items-center title-wrapper">
+            <h1 class="display-1">
+              Becoming-Imperceptible
+            </h1>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 align-items-center">
+          <a class="d-flex justify-content-center title-wrapper" data-toggle="modal" data-target="#becoming-modal" style="text-decoration: none;">
+            <h4 class="text-center menu-text">info</h4>
+          </a>
+        </div>
+      </div>
+
+      <div class="row align-items-center act-sec-2">
+        <div class="col-md-12 col-sm-12 align-items-center">
+          <svg style="position: absolute;top:50%;left:50%;transform: translate(-50%, -50%);max-height:80vh;max-width:100vw;" width="583" height="964" viewBox="0 0 583 964" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path data-toggle="modal" data-target="#becoming-video" id="becoming-path" d="M228 2.5C235.333 9.83333 251.4 26 257 32L272 54L275 64V87L285.5 101C282 103.5 274.4 108.5 272 108.5C269 108.5 268 125 267 129.5C266.2 133.1 265 141 264.5 144.5L272 151L301.5 183.5V199H307.5L312.5 183.5V133.5L307.5 105V72L312.5 54L331.5 57V44.5L341 38.5H349.5L355.5 59H373L389 72L393 87L362 133.5V157L373 133.5L418 108.5L454 119C458.667 126.333 468 141.7 468 144.5C468 147.3 466.333 171.667 465.5 183.5L451.5 204L460.5 216L442.5 230.5L460.5 235C465.667 243.167 476.6 261.2 479 268C482 276.5 479 285.5 476 292C473.6 297.2 472.667 317.833 472.5 327.5V360V405L492 432.5L504 479L509.5 512.5L496.5 552.5V575C494.667 591.167 490.4 624.4 488 628C485.6 631.6 483.667 650.5 483 659.5C492.833 674.833 513 706.3 515 709.5C517 712.7 531.5 740.833 538.5 754.5V768V780C538.833 793.667 539.8 822 541 826C542.2 830 546.833 837.333 549 840.5L558.5 843V862L573.5 858.5L580.5 871C579 875 575.5 883 573.5 883C571 883 555 904 552.5 908C550 912 534 919 520.5 924C509.7 928 498 930.667 493.5 931.5L467.5 927L460.5 919L463 908C465.5 906.833 470.8 903.6 472 900C473.2 896.4 476.167 896.5 477.5 897L488 880.5L493.5 862C495.5 857.333 499.8 846.5 501 840.5C502.5 833 495.5 812 493.5 806.5C491.9 802.1 485.833 787 483 780C473.5 765.833 454.5 736.9 454.5 734.5C454.5 732.1 441.5 726.833 435 724.5L440.5 749.5L446 777C444.167 781.833 440.5 792.1 440.5 794.5V812L446 848L454.5 871L460.5 883V900L450.5 908L437.5 911.5L430.5 919L437.5 927L435 936L425.5 948.5L398 955.5L353 962H282.5H256.5C251.3 962 245 950.333 242.5 944.5V931.5H210L184.5 936L172.5 931.5L167.5 919L180.5 897C184 886.167 191 864 191 862C191 860 188.667 842.5 187.5 834L180.5 843L177.5 816C178.167 806.167 179.1 785.2 177.5 780C175.9 774.8 170.167 749.5 167.5 737.5L163.5 689.5L157.5 661.5C159.5 642.333 163.5 603.4 163.5 601C163.5 598.6 153.833 590 149 586L133.5 530.5L102 489L95 477L81 470.5L74 444H95L99.5 432.5L63 440.5L46 422.5H30.5L3 372L6 344L10 323L16 254L39 247.5L54.5 236L74 221H89.5L99.5 191V176.5L116.5 151.5C118 141.333 121 120.3 121 117.5C121 114.7 118 105.667 116.5 101.5L147 39L187.5 6L228 2.5Z" stroke="#BFFF00" stroke-width="4"/>
+          </svg>
+
+          <!--
+          <svg  style="position: absolute;top:50%;left:50%;transform: translate(-50%, -50%);max-height:80vh;max-width:100vw;" width="951" height="825" viewBox="0 0 951 825" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path data-toggle="modal" data-target="#rhizoma-video" id="rhizoma-path" d="M3 300L17 16L43 10C86.6667 10.3333 176 10.8 184 10C194 9 276 2 285 2H431H803H859C862.333 10.6667 867 30 859 38C851 46 882.333 105.333 899 134C915.667 189.333 949 303.2 949 316V488C949 499.2 907.667 576.667 887 614L869 712L847 776H787V822C719 810.667 574.2 785.6 539 776C503.8 766.4 417.667 772 379 776C323 770 196.2 756 137 748C63 738 73 740 53 748C37 754.4 29 734.667 27 724V650L3 300Z" stroke="#BFFF00" stroke-width="4"/>
+          </svg> -->
+        </div>
+      </div>
+    </div>
+
+
 
 
   </div>
@@ -167,8 +275,163 @@
               </div>
               <div class="modal-body">
                 <video width="100%" height="1080" controls>
-                    <source src="/assets/video/astronaut.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                  <source src="/assets/video/astronaut.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade right" id="soping-mursida-modal" style="padding:0 !important;">
+    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+      <div class="modal-content-full-width modal-content ">
+        <div class="container-fluid">
+          <div class="row" style="margin:5vw;">
+            <div class="col-md-12 col-sm-12 align-items-center">
+              <div class=" modal-header-full-width modal-header text-center">
+                <button type="button" class="close modal-close-wrapper" data-dismiss="modal" aria-label="Close">
+                  <span class="modal-close-times" aria-hidden="true">
+                    &times
+                  </span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="info-paragraph">Riskya Duavania (V.o by Mimzy)</p>
+                <p class="info-paragraph">Soping Mursida</p>
+                <p class="info-paragraph">2021 |  display of used goods in flea market</p>
+                <p class="info-paragraph">
+                  Flea markets are seemingly a great solution for finding cheap items that still work, small spare parts that are hard to find, specific items of an era that are no longer produced, or items one has never imagined of. In addition, the flea market is also a critical source of economy for the sellers from selling the secondhand items with constant demand although its price has been reasonably cut down after a long-deal of negotiations.
+                </p>
+                <p class="info-paragraph">
+                  Soping Mursida (or cheap shopping) displays as a representation of Cik San's secondhand items that have been curated and are about to be traded. Their presences emerge in the midst of the bustle of a consumptive society full of new items due to the massive circulation of informations and trends.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade right" id="rhizoma-modal" style="padding:0 !important;">
+    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+      <div class="modal-content-full-width modal-content ">
+        <div class="container-fluid">
+          <div class="row" style="margin:5vw;">
+            <div class="col-md-12 col-sm-12 align-items-center">
+              <div class=" modal-header-full-width modal-header text-center">
+                <button type="button" class="close modal-close-wrapper" data-dismiss="modal" aria-label="Close">
+                  <span class="modal-close-times" aria-hidden="true">
+                    &times
+                  </span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="info-paragraph">Mimzy</p>
+                <p class="info-paragraph">Mentelaceae Rhizoma</p>
+                <p class="info-paragraph">2021 | printed papers in variable dimensions</p>
+                <p class="info-paragraph">
+                  This work arrives as an imagination as well as a hope for a safe and inclusive space by presenting transwomen as the main subject who is often excluded in dominant spaces.
+                </p>
+                <p class="info-paragraph">
+                  Mentelaceae Rhizoma is a collection of posters representing the process of body transformation, advertisements for job vacancies to cosmetics, which become a new space and hope in a society dominated by consumptive culture and heteronormative narratives.
+                </p>
+                <p class="info-paragraph">
+                  By presenting transwomen as the main subject in this work, Mimzy tries to imagine an inclusive safe space for transwomen who are often excluded, as well as a way to negotiate with initial perceptions of society that have been firmly established.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade right" id="rhizoma-video" style="padding:0 !important;">
+    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+      <div class="modal-content-full-width modal-content ">
+        <div class="container-fluid">
+          <div class="row" style="margin:5vw;">
+            <div class="col-md-12 col-sm-12 align-items-center">
+              <div class=" modal-header-full-width modal-header text-center">
+                <button type="button" class="close modal-close-wrapper" data-dismiss="modal" aria-label="Close">
+                  <span class="modal-close-times" aria-hidden="true">
+                    &times
+                  </span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <video width="100%" height="1080" controls>
+                  <source src="/assets/video/astronaut.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade right" id="becoming-modal" style="padding:0 !important;">
+    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+      <div class="modal-content-full-width modal-content ">
+        <div class="container-fluid">
+          <div class="row" style="margin:5vw;">
+            <div class="col-md-12 col-sm-12 align-items-center">
+              <div class=" modal-header-full-width modal-header text-center">
+                <button type="button" class="close modal-close-wrapper" data-dismiss="modal" aria-label="Close">
+                  <span class="modal-close-times" aria-hidden="true">
+                    &times
+                  </span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="info-paragraph">Mimzy and Riskya Duavania</p>
+                <p class="info-paragraph">Becoming-Imperceptible</p>
+                <p class="info-paragraph">2021 | TV and wooden crate</p>
+                <p class="info-paragraph">
+                  In the midst of noise filled with majority expression that adopts the binary system, many transwomen have often lived secretive lives and in hiding; afraid that their voices will be ultimately suppressed. In the process of looking for a safe space, Mimzy finally met Cik San. Soon their later encounters flowed organically to create a kinship—family not by blood.
+                </p>
+                <p class="info-paragraph">
+                  Becoming-Imperceptible is the place where they share intimacy and discuss what it means to be trans. This work is an interpretation of a becoming-imperceptible concept itself, using a wooden crate that appears locked to indicate how the gender identity of a transwoman cannot be seen by everyone. Using Mimzy’s gaze, Cik San will articulate the “two realms” that she found in the becoming-process. Cik San's awareness of the growth process; as seen in Jack Halberstam’s “Trans*”, is not that the older she gets, the more feminine she would look. Rather, within her body there are two beings undergoing transformations within each other, bearing witness to each other. In other words, her bodies in the "two realms" are equally aging. This process has inspired Mimzy in her self-actualization process. Both Mimzy and Cik San have agreed that society's acceptance of their gender identity is not essential for them nowadays, rather, it is a phase that has already been resolved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade right" id="becoming-video" style="padding:0 !important;">
+    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+      <div class="modal-content-full-width modal-content ">
+        <div class="container-fluid">
+          <div class="row" style="margin:5vw;">
+            <div class="col-md-12 col-sm-12 align-items-center">
+              <div class=" modal-header-full-width modal-header text-center">
+                <button type="button" class="close modal-close-wrapper" data-dismiss="modal" aria-label="Close">
+                  <span class="modal-close-times" aria-hidden="true">
+                    &times
+                  </span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <video width="100%" height="1080" controls>
+                  <source src="/assets/video/astronaut.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
                 </video>
               </div>
             </div>
@@ -180,10 +443,9 @@
 
   <script src="/assets/js/script.js"></script>
   <script type="text/javascript">
-
     var scrollPosition = document.body.scrollTop,
       boxPositions = [0, -1.5, -3, -4.5, -6, -7.5, -9, -10.5, -12, -13.5, -15, -16.5, -18, -19.5, -21];
-    var scrollDif = 1000;
+    var scrollDif = 500;
 
     function moveCamera() {
       var boxes = document.getElementsByClassName("box");
@@ -195,19 +457,27 @@
         var boxZ = boxPositions[i] + newScrollPosition / scrollDif;
         boxes[i].style["-webkit-transform"] = "translateZ(" + boxZ + "px)";
         boxes[i].style["opacity"] = (boxZ < 1.5) ? 1 : 0;
-        labels[i].style["opacity"] = ((boxZ < 1.5) && (boxZ > 0.2)) ? 1 : 0;
 
-        labels[i].style["z-index"] = ((boxZ < 1.5) && (boxZ > 0.2)) ? 100 : 0;
+        var sec1 = labels[i].querySelector(".act-sec-1");
+        var sec2 = labels[i].querySelector(".act-sec-2");
+        if (sec1 && sec2) {
+          sec1.style["opacity"] = ((boxZ < 0.7) && (boxZ > 0.2)) ? 1 : 0;
+          sec1.style["z-index"] = ((boxZ < 0.7) && (boxZ > 0.2)) ? 100 : 0;
+          sec2.style["opacity"] = ((boxZ < 1.5) && (boxZ > 0.7)) ? 1 : 0;
+          sec2.style["z-index"] = ((boxZ < 1.5) && (boxZ > 0.7)) ? 100 : 0;
+        }
+        labels[i].style["opacity"] = ((boxZ < 1.5) && (boxZ > 0.2)) ? 1 : 0;
+        labels[i].style["z-index"] = ((boxZ < 1.5) && (boxZ > 0.2)) ? 100 : -1;
 
         boxes[i].style["visibility"] = (boxZ < 1.8) ? 'visible' : 'hidden';
         // if(i == l-1) bottom_nav.style["visibility"] = (boxZ > 1.5) ? 'visible' : 'hidden';
       }
     }
 
-
-
     document.addEventListener("DOMContentLoaded", function() {
-      $('.loader-div').fadeOut();
+      if (document.getElementById("1st_image").complete == true && document.getElementById("2nd_image").complete == true  ) {
+        $('.loader-div').hide(2000);
+      }
       window.addEventListener("scroll", moveCamera);
       window.addEventListener('resize', moveCamera);
       moveCamera();

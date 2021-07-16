@@ -40,6 +40,7 @@ svg:hover {
   width: 100vw;
   height: 100vh;
   z-index: -1;
+  /* display: block; */
 }
 
 .act-name div h2 {
@@ -54,7 +55,6 @@ svg:hover {
   font-family: 'Marcellus', serif;
   font-style: normal;
   font-weight: normal;
-  position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: -1;
@@ -67,7 +67,6 @@ svg:hover {
   font-family: 'Marcellus', serif;
   font-style: normal;
   font-weight: normal;
-  position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: -1;
@@ -357,6 +356,7 @@ svg:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  z-index: 200;
 }
 
 .loader {

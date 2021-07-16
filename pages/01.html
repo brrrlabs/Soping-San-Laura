@@ -8,6 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+
   <link rel="stylesheet" href="/assets/css/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 </head>
@@ -441,7 +442,7 @@
     </div>
   </div>
 
-  <script src="/assets/js/script.js"></script>
+
   <script type="text/javascript">
     var scrollPosition = document.body.scrollTop,
       boxPositions = [0, -1.5, -3, -4.5, -6, -7.5, -9, -10.5, -12, -13.5, -15, -16.5, -18, -19.5, -21];
@@ -462,9 +463,9 @@
         var sec2 = labels[i].querySelector(".act-sec-2");
         if (sec1 && sec2) {
           sec1.style["opacity"] = ((boxZ < 0.7) && (boxZ > 0.2)) ? 1 : 0;
-          sec1.style["z-index"] = ((boxZ < 0.7) && (boxZ > 0.2)) ? 100 : 0;
+          sec1.style["z-index"] = ((boxZ < 0.7) && (boxZ > 0.2)) ? 200 : 0;
           sec2.style["opacity"] = ((boxZ < 1.5) && (boxZ > 0.7)) ? 1 : 0;
-          sec2.style["z-index"] = ((boxZ < 1.5) && (boxZ > 0.7)) ? 100 : 0;
+          sec2.style["z-index"] = ((boxZ < 1.5) && (boxZ > 0.7)) ? 200 : 0;
         }
         labels[i].style["opacity"] = ((boxZ < 1.5) && (boxZ > 0.2)) ? 1 : 0;
         labels[i].style["z-index"] = ((boxZ < 1.5) && (boxZ > 0.2)) ? 100 : -1;
@@ -481,6 +482,7 @@
       moveCamera();
     });
   </script>
+  <script src="/assets/js/script.js"></script>
 </body>
 
 </html>

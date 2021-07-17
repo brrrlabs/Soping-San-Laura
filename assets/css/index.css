@@ -80,6 +80,8 @@ iframe[src*=youtube] {
   font-family: 'Marcellus', serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.5;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -421,12 +423,28 @@ svg:hover {
   .display-1 {
     font-size: 3rem;
   }
+
+  .display-3 {
+    font-size: 2.5rem;
+  }
+
+  .credit {
+    font-size: 0.8rem;
+  }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .display-1 {
     font-size: 3rem;
+  }
+
+  .display-3 {
+    font-size: 2.5rem;
+  }
+
+  .credit {
+    font-size: 0.8rem;
   }
 }
 

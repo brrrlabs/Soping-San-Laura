@@ -148,14 +148,14 @@ svg:hover {
 .introduction {
   height: 100vh;
   width: 100vw;
-  background-image: url("/assets/img/02_HOMEPAGE/HOME_PAGE.png");
+  background-image: url("/assets/img/02_HOMEPAGE/HOME_PAGE.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 /* .rhizoma-row {
-  background-image: url("/assets/img/ordered/09_a.png");
+  background-image: url("/assets/img/ordered/09_a.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -192,7 +192,7 @@ svg:hover {
 .frontpage {
   height: 100vh;
   width: 100vw;
-  background-image: url("/assets/img/01_LANDING_PAGE/01_WELCOME.png");
+  background-image: url("/assets/img/01_LANDING_PAGE/01_WELCOME.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -227,6 +227,9 @@ svg:hover {
 }
 
 /* MODAL */
+.modal-content {
+  border: none;
+}
 .modal-dialog-full-width {
   width: 100% !important;
   height: 100% !important;
@@ -326,6 +329,16 @@ svg:hover {
   /* Chrome, Safari, Opera */
   transform: translateZ(0);
   object-fit: cover;
+}
+
+#gif-image-parent {
+  -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+  filter: blur(10px);
+}
+
+#gif-image {
+  object-fit: scale-down;
+  position: absolute;
 }
 
 .box video {

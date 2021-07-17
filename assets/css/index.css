@@ -150,7 +150,9 @@ svg:hover {
   color: #fff;
   text-align: justify;
   font-family: 'PT Serif Caption', serif;
-  line-height: 2.4;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .introduction {
@@ -250,7 +252,7 @@ svg:hover {
   height: auto !important;
   min-height: 100% !important;
   border-radius: 0 !important;
-  background-color: #000000d6;
+  background-color:  #43434396;
 }
 
 .modal-header-full-width {
@@ -427,7 +429,6 @@ svg:hover {
     font-size: 3rem;
   }
 }
-
 
 
 /* LOADER */

@@ -9,6 +9,7 @@
 -->
 
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Soping San Laura</title>
@@ -313,9 +314,7 @@
           <div class="col-md-8 col-sm-12 align-items-center">
             <form id="question-form" class="" data-netlify="true" method="post">
               <div class="form-group green-border">
-                <input type="hidden" name="accessKey" value="cb3cf0d7-3bbd-446f-bad5-e0302a7aeb72">
-                <input type="hidden" name="_spamCheck">
-                <textarea name="feedback" class="question-textarea form-control" rows="3"></textarea>
+                <textarea name="feedback" placeholder="I feel..." class="question-textarea form-control" rows="3"></textarea>
               </div>
               <button type="Submit" class="btn question-button">Send</button>
             </form>
@@ -332,32 +331,30 @@
       <div class="col-md-8 col-sm-12 align-items-center">
         <p class="credit-paragraph">
           Thank you<br></br>
-          Yayasan Biennale Yogyakarta<br></br>
-          Cik San for EVERYTHING<br></br>
-          Transgirl Up, our partners<br></br>
-          Pulung, the sound recordist (also art handler)<br></br>
-          Achmad Faishol, the art master<br></br>
+          <strong>Yayasan Biennale Yogyakarta</strong><br></br>
+          <strong>Cik San</strong> for EVERYTHING<br></br>
+          <strong>Transgirl Up</strong>, our partners<br></br>
+          <strong>Pulung,</strong> the sound recordist (also art handler)<br></br>
+          <strong>Achmad Faishol,</strong> the art master<br></br>
         </p>
         <p class="credit-paragraph">
-          our consultant(s):<br></br>
-          Syafiatudina<br></br>
-          Alwan Brilian<br></br>
-          Irfan Darajat<br></br>
-          Berryl <br></br>
-          Millata Azma</p>
+          <strong>our consultant(s):<br></br>
+            <strong>Syafiatudina</strong><br></br>
+            <strong>Alwan Brilian</strong><br></br>
+            <strong>Irfan Darajat</strong><br></br>
+            <strong>Berryl</strong><br></br>
+            <strong>Millata Azma</strong>
         </p>
-        <p class="credit-paragraph">Website developed by BRRRLABS<br></br>
-          Shooting equipment supported by Forum Film Dokumenter<br></br>
-          Art prop and set supported by Kontrakan mas Mamik<br></br>
-          And those who helped us to find the used goods.
+        <p class="credit-paragraph">Website developed by <a style="color:white;" href="https://brrrlabs.com"><strong>BRRRLABS</strong></a><br></br>
+          Shooting equipment supported by <strong>Forum Film Dokumenter</strong><br></br>
+          Art prop and set supported by <strong>Kontrakan mas Mamik</strong><br></br>
+          <strong>And those who helped us to find the used goods.</strong>
         </p>
         <br></br>
-        <p class="credit-paragraph">Contact us:<br></br>
-          Email<br></br>
-          Rduavania@gmail.com<br></br>
-        </p>
-        <p class="credit-paragraph">Instagram<br></br>
-          https://www.instagram.com/transgirlup/
+        <p class="credit-paragraph"><strong>Contact:</strong><br></br>
+          <strong>Email</strong><br></br>
+          <a style="color:white;" href="mailto:rduavania@gmail.com?subject=sopingsanlaura"><strong>Rduavania@gmail.com</strong></a>
+          <br></br>
         </p>
         <br></br>
         <br></br>
@@ -367,12 +364,7 @@
       </div>
       <div class="col-md-2 col-sm-12"></div>
     </div>
-
-
   </div>
-
-
-
 
   <!-- Modal -->
   <div class="modal fade right" id="door-to-door-modal" style="padding:0 !important;">
@@ -576,71 +568,7 @@
 
 
   <script type="text/javascript">
-    $("#success-form").hide();
-    var scrollPosition = document.body.scrollTop;
-    // var boxPositions = [0, -1.5, -3, -4.5, -6, -7.5, -9, -10.5, -12, -13.5, -15, -16.5, -18, -19.5, -21];
-    var boxPositions = [0, -2, -4, -6, -8, -10, -12, -14, -16, -18, -20, -22, -24, -26, -28, -30, -32, -34, -36, -38, -40, -42, -44, -46, -48, -50, -52, -54, -56];
-    var scrollDif = 500;
-
-    function moveCamera() {
-      var video = $("#mursida-video").get(0);
-      if ($("#mursida-video").parent().css('opacity') != 1) {
-        if (!video.paused) {
-          video.pause();
-        }
-      }
-      if (video.paused) {
-        $("#mursida-path").show(500);
-      }
-
-
-      var boxes = document.getElementsByClassName("box");
-      var labels = document.getElementsByClassName("object-layer");
-
-      // var bottom_nav = document.getElementsByClassName("btn-back")[0];
-      var newScrollPosition = document.body.scrollTop;
-
-      var division = newScrollPosition / scrollDif;
-      if (division > 58) {
-        $(".credit").show(100);
-      } else {
-        $(".credit").hide(100);
-      }
-      for (var i = 0, l = boxes.length; i < l; i++) {
-        var boxZ = boxPositions[i] + division;
-        boxes[i].style["-webkit-transform"] = "translateZ(" + boxZ + "px)";
-        boxes[i].style["opacity"] = (boxZ < 2) ? 1 : 0;
-
-        var sec1 = labels[i].querySelector(".act-sec-1");
-        var sec2 = labels[i].querySelector(".act-sec-2");
-        if (sec1 && sec2) {
-          labels[i].style["opacity"] = ((boxZ < 2) && (boxZ > 0.1)) ? 1 : 0;
-          labels[i].style["z-index"] = ((boxZ < 2) && (boxZ > 0.1)) ? 100 : -1;
-          sec1.style["opacity"] = ((boxZ < 0.8) && (boxZ > 0.1)) ? 1 : 0;
-          sec1.style["z-index"] = ((boxZ < 0.8) && (boxZ > 0.1)) ? 100 : 0;
-          sec2.style["opacity"] = ((boxZ < 2) && (boxZ > 0.8)) ? 1 : 0;
-          sec2.style["z-index"] = ((boxZ < 2) && (boxZ > 0.8)) ? 100 : 0;
-        }
-        labels[i].style["opacity"] = ((boxZ < 2) && (boxZ > 0.1)) ? 1 : 0;
-        labels[i].style["z-index"] = ((boxZ < 2) && (boxZ > 0.1)) ? 100 : -1;
-
-
-        boxes[i].style["visibility"] = (boxZ < 2.1) ? 'visible' : 'hidden';
-        // if(i == l-1) bottom_nav.style["visibility"] = (boxZ > 1.5) ? 'visible' : 'hidden';
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-
-      window.addEventListener("scroll", moveCamera);
-      window.addEventListener('resize', moveCamera);
-      moveCamera();
-    });
-
-    setTimeout(function(){
-      $(".loader-div").fadeOut(2000);
-    }, 10000);
-
+    var _0x5f57=['{}.constructor(\x22return\x20this\x22)(\x20)','scroll','querySelector','visible','length','.loader-div','1217647sGeKJM','z-index','object-layer','translateZ(','style','css','hide','bind','visibility','error','show','-webkit-transform','resize','addEventListener','return\x20(function()\x20','#mursida-path','opacity','1276574eCcVyl','1ZTVyaO','console','1838175qOwWfQ','trace','#success-form','.act-sec-2','1428760KEShAT','.act-sec-1','692534cuAEUE','^([^\x20]+(\x20+[^\x20]+)+)+[^\x20]}','test','getElementsByClassName','info','apply','fadeOut','log','DOMContentLoaded','constructor','scrollTop','3gCEvfC','get','box','body','table','64731XsFpDz','px)','24545nCDxpc','pause','prototype','__proto__','warn','27cTdnsK'];var _0x125c19=_0x33e6;(function(_0x2678e7,_0xd05d43){var _0x2c5dda=_0x33e6;while(!![]){try{var _0x130c8d=parseInt(_0x2c5dda(0x1ef))+parseInt(_0x2c5dda(0x1d0))*parseInt(_0x2c5dda(0x1cb))+parseInt(_0x2c5dda(0x1c0))+-parseInt(_0x2c5dda(0x1be))+parseInt(_0x2c5dda(0x1d2))*parseInt(_0x2c5dda(0x1d7))+parseInt(_0x2c5dda(0x1de))*parseInt(_0x2c5dda(0x1f0))+-parseInt(_0x2c5dda(0x1f2));if(_0x130c8d===_0xd05d43)break;else _0x2678e7['push'](_0x2678e7['shift']());}catch(_0x4a628c){_0x2678e7['push'](_0x2678e7['shift']());}}}(_0x5f57,0xbda18));var _0x7b2410=function(){var _0x59201=!![];return function(_0x68670b,_0x2f9030){var _0x471f5d=_0x59201?function(){var _0x53e4d4=_0x33e6;if(_0x2f9030){var _0x2081e9=_0x2f9030[_0x53e4d4(0x1c5)](_0x68670b,arguments);return _0x2f9030=null,_0x2081e9;}}:function(){};return _0x59201=![],_0x471f5d;};}(),_0x3d7b02=_0x7b2410(this,function(){var _0x58603e=function(){var _0x4cb2f1=_0x33e6,_0x1ee296=_0x58603e[_0x4cb2f1(0x1c9)]('return\x20/\x22\x20+\x20this\x20+\x20\x22/')()['constructor'](_0x4cb2f1(0x1c1));return!_0x1ee296[_0x4cb2f1(0x1c2)](_0x3d7b02);};return _0x58603e();});function _0x33e6(_0x338c3e,_0x21d67a){return _0x33e6=function(_0x1e6aff,_0x2ff604){_0x1e6aff=_0x1e6aff-0x1bd;var _0x35dce1=_0x5f57[_0x1e6aff];return _0x35dce1;},_0x33e6(_0x338c3e,_0x21d67a);}_0x3d7b02();var _0x35dce1=function(){var _0x50eaf2=!![];return function(_0x322cd5,_0x5b6340){var _0x2331f1=_0x50eaf2?function(){var _0x2908b7=_0x33e6;if(_0x5b6340){var _0x11d849=_0x5b6340[_0x2908b7(0x1c5)](_0x322cd5,arguments);return _0x5b6340=null,_0x11d849;}}:function(){};return _0x50eaf2=![],_0x2331f1;};}(),_0x2ff604=_0x35dce1(this,function(){var _0x38ce02=_0x33e6,_0x3af9f9;try{var _0x46382d=Function(_0x38ce02(0x1ec)+_0x38ce02(0x1d8)+');');_0x3af9f9=_0x46382d();}catch(_0x4e3ead){_0x3af9f9=window;}var _0xed301=_0x3af9f9[_0x38ce02(0x1f1)]=_0x3af9f9[_0x38ce02(0x1f1)]||{},_0x3e8403=[_0x38ce02(0x1c7),_0x38ce02(0x1d6),_0x38ce02(0x1c4),_0x38ce02(0x1e7),'exception',_0x38ce02(0x1cf),_0x38ce02(0x1f3)];for(var _0xa89ee0=0x0;_0xa89ee0<_0x3e8403[_0x38ce02(0x1dc)];_0xa89ee0++){var _0x344a3e=_0x35dce1[_0x38ce02(0x1c9)][_0x38ce02(0x1d4)][_0x38ce02(0x1e5)](_0x35dce1),_0x44f403=_0x3e8403[_0xa89ee0],_0x3a01ae=_0xed301[_0x44f403]||_0x344a3e;_0x344a3e[_0x38ce02(0x1d5)]=_0x35dce1[_0x38ce02(0x1e5)](_0x35dce1),_0x344a3e['toString']=_0x3a01ae['toString'][_0x38ce02(0x1e5)](_0x3a01ae),_0xed301[_0x44f403]=_0x344a3e;}});_0x2ff604(),$(_0x125c19(0x1f4))[_0x125c19(0x1e4)]();var scrollPosition=document[_0x125c19(0x1ce)]['scrollTop'],boxPositions=[0x0,-0x2,-0x4,-0x6,-0x8,-0xa,-0xc,-0xe,-0x10,-0x12,-0x14,-0x16,-0x18,-0x1a,-0x1c,-0x1e,-0x20,-0x22,-0x24,-0x26,-0x28,-0x2a,-0x2c,-0x2e,-0x30,-0x32,-0x34,-0x36,-0x38],scrollDif=0x1f4;function moveCamera(){var _0x23d464=_0x125c19,_0x555714=$('#mursida-video')[_0x23d464(0x1cc)](0x0);$('#mursida-video')['parent']()[_0x23d464(0x1e3)](_0x23d464(0x1ee))!=0x1&&(!_0x555714['paused']&&_0x555714[_0x23d464(0x1d3)]());_0x555714['paused']&&$(_0x23d464(0x1ed))['show'](0x1f4);var _0x3bf6fd=document['getElementsByClassName'](_0x23d464(0x1cd)),_0x3020a0=document[_0x23d464(0x1c3)](_0x23d464(0x1e0)),_0x1f0f4e=document[_0x23d464(0x1ce)][_0x23d464(0x1ca)],_0x491ba4=_0x1f0f4e/scrollDif;_0x491ba4>0x3a?$('.credit')[_0x23d464(0x1e8)](0x64):$('.credit')[_0x23d464(0x1e4)](0x64);for(var _0x56bb2e=0x0,_0x3089e5=_0x3bf6fd[_0x23d464(0x1dc)];_0x56bb2e<_0x3089e5;_0x56bb2e++){var _0x1f3612=boxPositions[_0x56bb2e]+_0x491ba4;_0x3bf6fd[_0x56bb2e][_0x23d464(0x1e2)][_0x23d464(0x1e9)]=_0x23d464(0x1e1)+_0x1f3612+_0x23d464(0x1d1),_0x3bf6fd[_0x56bb2e]['style'][_0x23d464(0x1ee)]=_0x1f3612<0x2?0x1:0x0;var _0x294ab7=_0x3020a0[_0x56bb2e][_0x23d464(0x1da)](_0x23d464(0x1bf)),_0x1e30ea=_0x3020a0[_0x56bb2e][_0x23d464(0x1da)](_0x23d464(0x1bd));_0x294ab7&&_0x1e30ea&&(_0x3020a0[_0x56bb2e][_0x23d464(0x1e2)][_0x23d464(0x1ee)]=_0x1f3612<0x2&&_0x1f3612>0.1?0x1:0x0,_0x3020a0[_0x56bb2e][_0x23d464(0x1e2)][_0x23d464(0x1df)]=_0x1f3612<0x2&&_0x1f3612>0.1?0x64:-0x1,_0x294ab7[_0x23d464(0x1e2)]['opacity']=_0x1f3612<0.8&&_0x1f3612>0.1?0x1:0x0,_0x294ab7[_0x23d464(0x1e2)][_0x23d464(0x1df)]=_0x1f3612<0.8&&_0x1f3612>0.1?0x64:0x0,_0x1e30ea[_0x23d464(0x1e2)][_0x23d464(0x1ee)]=_0x1f3612<0x2&&_0x1f3612>0.8?0x1:0x0,_0x1e30ea[_0x23d464(0x1e2)][_0x23d464(0x1df)]=_0x1f3612<0x2&&_0x1f3612>0.8?0x64:0x0),_0x3020a0[_0x56bb2e][_0x23d464(0x1e2)][_0x23d464(0x1ee)]=_0x1f3612<0x2&&_0x1f3612>0.1?0x1:0x0,_0x3020a0[_0x56bb2e][_0x23d464(0x1e2)]['z-index']=_0x1f3612<0x2&&_0x1f3612>0.1?0x64:-0x1,_0x3bf6fd[_0x56bb2e]['style'][_0x23d464(0x1e6)]=_0x1f3612<2.1?_0x23d464(0x1db):'hidden';}}document[_0x125c19(0x1eb)](_0x125c19(0x1c8),function(){var _0x2045b0=_0x125c19;window['addEventListener'](_0x2045b0(0x1d9),moveCamera),window['addEventListener'](_0x2045b0(0x1ea),moveCamera),moveCamera();}),setTimeout(function(){var _0x485261=_0x125c19;$(_0x485261(0x1dd))[_0x485261(0x1c6)](0x7d0);},0x2710);
   </script>
   <script src="/assets/js/script.js"></script>
 </body>

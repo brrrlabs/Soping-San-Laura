@@ -54,21 +54,3 @@ const handleSubmit = (e) => {
     alert(error))
 }
 document.querySelector("form").addEventListener("submit", handleSubmit);
-
-// $("#question-form").submit(function(event) {
-//   event.preventDefault();
-//   $.ajax({
-//     url: 'https://api.mailslurp.com/forms?_to=brrrlabs+sopingsanlaura@gmail.com', // url where to submit the request
-//     type: "POST", // type of action POST || GET
-//     dataType: 'json', // data type
-//     data: $("#question-form").serialize(), // post data || get data
-//     success: function(result) {
-//       // you can see the result fr Form submission from your site. om the console
-//       // tab of the developer tools
-//       alert(JSON.parse(result));
-//     },
-//     error: function(xhr, resp, text) {
-//       alert(xhr, resp, text);
-//     }
-//   })
-// });

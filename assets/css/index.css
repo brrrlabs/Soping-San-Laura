@@ -23,7 +23,7 @@ iframe[src*=youtube] {
   color: #fff;
   text-align: center;
   font-family: 'PT Serif Caption', serif;
-  line-height: 0.7;
+  line-height: 1;
   font-style: normal;
 }
 
@@ -514,9 +514,12 @@ svg:hover {
   }
 
   .credit {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
+
+
 }
+
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -529,7 +532,7 @@ svg:hover {
   }
 
   .credit {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
